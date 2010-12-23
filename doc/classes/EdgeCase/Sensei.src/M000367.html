@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>observe (EdgeCase::Sensei)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File edgecase.rb, line 153</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">observe</span>(<span class="ruby-identifier">step</span>)
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">step</span>.<span class="ruby-identifier">passed?</span>
+        <span class="ruby-ivar">@pass_count</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+        <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@pass_count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">progress</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">to_i</span>
+          <span class="ruby-ivar">@observations</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">green</span>(<span class="ruby-node">&quot;#{step.koan_file}##{step.name} has expanded your awareness.&quot;</span>)
+        <span class="ruby-keyword kw">end</span>
+      <span class="ruby-keyword kw">else</span>
+        <span class="ruby-ivar">@failed_test</span> = <span class="ruby-identifier">step</span>
+        <span class="ruby-ivar">@failure</span> = <span class="ruby-identifier">step</span>.<span class="ruby-identifier">failure</span>
+        <span class="ruby-identifier">add_progress</span>(<span class="ruby-ivar">@pass_count</span>)
+        <span class="ruby-ivar">@observations</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">red</span>(<span class="ruby-node">&quot;#{step.koan_file}##{step.name} has damaged your karma.&quot;</span>)
+        <span class="ruby-identifier">throw</span> <span class="ruby-identifier">:edgecase_exit</span>
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

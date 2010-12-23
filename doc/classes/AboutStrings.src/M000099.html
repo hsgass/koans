@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>test_any_ruby_expression_may_be_interpolated (AboutStrings)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File about_strings.rb, line 132</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_any_ruby_expression_may_be_interpolated</span>
+    <span class="ruby-identifier">string</span> = <span class="ruby-node">&quot;The square root of 5 is #{Math.sqrt(5)}&quot;</span>
+    <span class="ruby-identifier">assert_equal</span> <span class="ruby-value str">&quot;The square root of 5 is 2.23606797749979&quot;</span>, <span class="ruby-identifier">string</span>
+  <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

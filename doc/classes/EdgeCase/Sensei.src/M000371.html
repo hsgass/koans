@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>show_progress (EdgeCase::Sensei)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File edgecase.rb, line 188</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show_progress</span>
+      <span class="ruby-identifier">bar_width</span> = <span class="ruby-value">50</span>
+      <span class="ruby-identifier">total_tests</span> = <span class="ruby-constant">EdgeCase</span><span class="ruby-operator">::</span><span class="ruby-constant">Koan</span>.<span class="ruby-identifier">total_tests</span>
+      <span class="ruby-identifier">scale</span> = <span class="ruby-identifier">bar_width</span>.<span class="ruby-identifier">to_f</span><span class="ruby-operator">/</span><span class="ruby-identifier">total_tests</span>
+      <span class="ruby-identifier">print</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">green</span>(<span class="ruby-value str">&quot;your path thus far [&quot;</span>)
+      <span class="ruby-identifier">happy_steps</span> = (<span class="ruby-identifier">pass_count</span><span class="ruby-operator">*</span><span class="ruby-identifier">scale</span>).<span class="ruby-identifier">to_i</span>
+      <span class="ruby-identifier">happy_steps</span> = <span class="ruby-value">1</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">happy_steps</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">pass_count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+      <span class="ruby-identifier">print</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">green</span>(<span class="ruby-value str">'.'</span><span class="ruby-operator">*</span><span class="ruby-identifier">happy_steps</span>)
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">failed?</span>
+        <span class="ruby-identifier">print</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">red</span>(<span class="ruby-value str">'X'</span>)
+        <span class="ruby-identifier">print</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">cyan</span>(<span class="ruby-value str">'_'</span><span class="ruby-operator">*</span>(<span class="ruby-identifier">bar_width</span><span class="ruby-operator">-</span><span class="ruby-value">1</span><span class="ruby-operator">-</span><span class="ruby-identifier">happy_steps</span>))
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-identifier">print</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">green</span>(<span class="ruby-value str">']'</span>)
+      <span class="ruby-identifier">print</span> <span class="ruby-node">&quot; #{pass_count}/#{total_tests}&quot;</span>
+      <span class="ruby-identifier">puts</span>
+    <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

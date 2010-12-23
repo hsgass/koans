@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>test_array_access (ArrayTest)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File array_test.rb, line 11</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_array_access</span>
+    <span class="ruby-identifier">food</span> = [<span class="ruby-identifier">:peanut</span>, <span class="ruby-identifier">:button</span>, <span class="ruby-identifier">:and</span>, <span class="ruby-identifier">:jelly</span>]
+    <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">food</span>.<span class="ruby-identifier">first</span>
+    <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">food</span>.<span class="ruby-identifier">last</span>
+    <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">food</span>[<span class="ruby-value">0</span>]
+    <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">food</span>[<span class="ruby-value">2</span>]
+    <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">food</span>[(<span class="ruby-identifier">food</span>.<span class="ruby-identifier">size</span>() <span class="ruby-operator">-</span> <span class="ruby-value">1</span>)]
+  <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

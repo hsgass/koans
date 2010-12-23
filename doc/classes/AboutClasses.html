@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: AboutClasses</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">AboutClasses</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../files/about_classes_rb.html">
+                about_classes.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                <a href="EdgeCase/Koan.html">
+                EdgeCase::Koan
+               </a>
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000169">test_all_objects_support_to_s_and_inspect</a>&nbsp;&nbsp;
+      <a href="#M000163">test_args_to_new_must_match_initialize</a>&nbsp;&nbsp;
+      <a href="#M000161">test_attr_accessor_will_automatically_define_both_read_and_write_accessors</a>&nbsp;&nbsp;
+      <a href="#M000160">test_attr_reader_will_automatically_define_an_accessor</a>&nbsp;&nbsp;
+      <a href="#M000164">test_different_objects_have_difference_instance_variables</a>&nbsp;&nbsp;
+      <a href="#M000162">test_initialize_provides_initial_values_for_instance_variables</a>&nbsp;&nbsp;
+      <a href="#M000165">test_inside_a_method_self_refers_to_the_containing_object</a>&nbsp;&nbsp;
+      <a href="#M000168">test_inspect_provides_a_more_complete_string_version</a>&nbsp;&nbsp;
+      <a href="#M000155">test_instance_variables_can_be_set_by_assigning_to_them</a>&nbsp;&nbsp;
+      <a href="#M000156">test_instance_variables_cannot_be_accessed_outside_the_class</a>&nbsp;&nbsp;
+      <a href="#M000154">test_instances_of_classes_can_be_created_with_new</a>&nbsp;&nbsp;
+      <a href="#M000167">test_to_s_is_used_in_string_interpolation</a>&nbsp;&nbsp;
+      <a href="#M000166">test_to_s_provides_a_string_version_of_the_object</a>&nbsp;&nbsp;
+      <a href="#M000159">test_you_can_create_accessor_methods_to_return_instance_variables</a>&nbsp;&nbsp;
+      <a href="#M000157">test_you_can_politely_ask_for_instance_variable_values</a>&nbsp;&nbsp;
+      <a href="#M000158">test_you_can_rip_the_value_out_using_instance_eval</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+    <div id="class-list">
+      <h3 class="section-bar">Classes and Modules</h3>
+
+      Class <a href="AboutClasses/Dog.html" class="link">AboutClasses::Dog</a><br />
+Class <a href="AboutClasses/Dog2.html" class="link">AboutClasses::Dog2</a><br />
+Class <a href="AboutClasses/Dog3.html" class="link">AboutClasses::Dog3</a><br />
+Class <a href="AboutClasses/Dog4.html" class="link">AboutClasses::Dog4</a><br />
+Class <a href="AboutClasses/Dog5.html" class="link">AboutClasses::Dog5</a><br />
+Class <a href="AboutClasses/Dog6.html" class="link">AboutClasses::Dog6</a><br />
+Class <a href="AboutClasses/Dog7.html" class="link">AboutClasses::Dog7</a><br />
+
+    </div>
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000169" class="method-detail">
+        <a name="M000169"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000169.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000169.html');return false;">
+          <span class="method-name">test_all_objects_support_to_s_and_inspect</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000163" class="method-detail">
+        <a name="M000163"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000163.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000163.html');return false;">
+          <span class="method-name">test_args_to_new_must_match_initialize</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000161" class="method-detail">
+        <a name="M000161"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000161.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000161.html');return false;">
+          <span class="method-name">test_attr_accessor_will_automatically_define_both_read_and_write_accessors</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000160" class="method-detail">
+        <a name="M000160"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000160.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000160.html');return false;">
+          <span class="method-name">test_attr_reader_will_automatically_define_an_accessor</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000164" class="method-detail">
+        <a name="M000164"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000164.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000164.html');return false;">
+          <span class="method-name">test_different_objects_have_difference_instance_variables</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000162" class="method-detail">
+        <a name="M000162"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000162.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000162.html');return false;">
+          <span class="method-name">test_initialize_provides_initial_values_for_instance_variables</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000165" class="method-detail">
+        <a name="M000165"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000165.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000165.html');return false;">
+          <span class="method-name">test_inside_a_method_self_refers_to_the_containing_object</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000168" class="method-detail">
+        <a name="M000168"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000168.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000168.html');return false;">
+          <span class="method-name">test_inspect_provides_a_more_complete_string_version</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000155" class="method-detail">
+        <a name="M000155"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000155.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000155.html');return false;">
+          <span class="method-name">test_instance_variables_can_be_set_by_assigning_to_them</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000156" class="method-detail">
+        <a name="M000156"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000156.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000156.html');return false;">
+          <span class="method-name">test_instance_variables_cannot_be_accessed_outside_the_class</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000154" class="method-detail">
+        <a name="M000154"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000154.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000154.html');return false;">
+          <span class="method-name">test_instances_of_classes_can_be_created_with_new</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000167" class="method-detail">
+        <a name="M000167"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000167.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000167.html');return false;">
+          <span class="method-name">test_to_s_is_used_in_string_interpolation</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000166" class="method-detail">
+        <a name="M000166"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000166.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000166.html');return false;">
+          <span class="method-name">test_to_s_provides_a_string_version_of_the_object</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000159" class="method-detail">
+        <a name="M000159"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000159.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000159.html');return false;">
+          <span class="method-name">test_you_can_create_accessor_methods_to_return_instance_variables</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000157" class="method-detail">
+        <a name="M000157"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000157.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000157.html');return false;">
+          <span class="method-name">test_you_can_politely_ask_for_instance_variable_values</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000158" class="method-detail">
+        <a name="M000158"></a>
+
+        <div class="method-heading">
+          <a href="AboutClasses.src/M000158.html" target="Code" class="method-signature"
+            onclick="popupCode('AboutClasses.src/M000158.html');return false;">
+          <span class="method-name">test_you_can_rip_the_value_out_using_instance_eval</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
